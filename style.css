@@ -15,7 +15,9 @@
 }
 
 body {
-  overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
   background-color: var(--bg-color);
 }
 
@@ -424,6 +426,7 @@ header .container {
 @media (max-width: 980px) {
   .image-header-mobile {
     right: -50px;
+    clip-path: inset(0 0 0 0); /* Corta 20% do topo da imagem */
   }
 }
 
