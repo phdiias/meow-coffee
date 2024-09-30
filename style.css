@@ -15,9 +15,6 @@
 }
 
 body {
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
   background-color: var(--bg-color);
 }
 
@@ -463,4 +460,86 @@ header .container {
     top: 0;
     right: -50px;
   }
+}
+
+/* Sessão dos cafés/driks */
+#coffees {
+  width: 100%;
+  height: auto;
+  margin-top: 72px;
+  margin-bottom: 72px;
+  border: 1px solid black;
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.coffees-text-content {
+  max-width: 544px;
+  text-align: center;
+  color: var(--headings-color);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  border: 1px solid black;
+}
+
+.coffees-text-content h2 {
+  margin: auto;
+  width: max-content;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 130%;
+}
+
+h2::after {
+    content: "";
+    display: block;
+    width: calc(100% - 50px); 
+    border-bottom: 1px solid var(--headings-color);
+    margin: auto;
+}
+
+.coffees-text-content a {
+  text-decoration: none;
+  color: var(--headings-color);
+  font-weight: 600;
+}
+
+.coffees-cards-content {
+  border: 1px solid black;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.coffees-cards-content .coffee-card:nth-child(1) {
+  background: linear-gradient(to bottom left, #F6C7C5 0%, #C27D7A 100%);
+}
+
+.coffee-card {
+  border: 1px solid black;
+  padding: 15px;
+  text-align: center;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 48px;
+}
+
+.coffee-card-price {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.coffee-card-title {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.coffee-card-desc {
+  font-size: 14px;
 }
