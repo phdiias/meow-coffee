@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <img alt="projeto Meow Coffee" src=".github/Capa.png" width="100%">
+  <img alt="projeto Meow Coffee" src="./github/capa.png" width="100%">
 </p>
 
 ## 🚀 Tecnologias
