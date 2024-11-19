@@ -1,0 +1,47 @@
+/* Seção croissant */
+@media (max-width: 768px) {
+  #croissants {
+    & .croissants-box {
+      flex-direction: column;
+
+      & .croissants-texts {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        & .croissants-price {
+          display: none;
+        }
+
+        & .croissants-title {
+          width: fit-content;
+          font-size: 36px;
+          position: relative;
+
+          &::after {
+            content: ''; /* Cria um conteúdo vazio */
+            position: absolute; /* Posiciona a borda em relação ao texto */
+            left: 50%; /* Centraliza a borda no meio do texto */
+            bottom: 0; /* Coloca a borda logo abaixo do texto */
+            transform: translateX(
+              -50%
+            ); /* Ajusta para centralizar completamente a borda */
+            width: 25%; /* Largura da borda, menor que o texto */
+            height: 1px; /* Espessura da borda */
+            background-color: #000000; /* Cor da borda */
+          }
+
+          &::first-letter {
+            border-bottom: none;
+          }
+        }
+
+        & .croissants-subtitle {
+          display: none;
+        }
+      }
+    }
+  }
+}

@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meow Café</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" href="src/css/responsive.css" />
   </head>
   <body>
     <header class="container">
@@ -12,7 +13,7 @@
         <div class="navbar-logo-links">
           <img
             class="navbar-logo"
-            src="./images/logo.png"
+            src="src/images/logo.png"
             alt="Logo do Meow Café - Ilustração de um gato deitado envolvendo uma xícara de café"
           />
           <span class="navbar-title">Meow Café</span>
@@ -32,7 +33,7 @@
           </div>
           <img
             class="image-header-desktop"
-            src="./images/image-header.png"
+            src="src/images/image-header.png"
             alt="Um copo de bebida com chantilly em um fundo rosa, sem logotipo visível, ao lado de um gato curioso espiando de dentro de outro copo. Ao redor, há folhas verdes, grãos de café e estrelas desenhadas, criando uma atmosfera aconchegante."
           />
         </ul>
@@ -44,7 +45,7 @@
         </ul>
         <img
           class="image-header-mobile"
-          src="./images/image-header-mobile.png"
+          src="src/images/image-header-mobile.png"
           alt="Um copo de bebida com chantilly em um fundo rosa, sem logotipo visível, ao lado de um gato curioso espiando de dentro de outro copo. Ao redor, há folhas verdes, grãos de café e estrelas desenhadas, criando uma atmosfera aconchegante."
         />
       </nav>
@@ -73,7 +74,7 @@
           <div class="coffee-card">
             <div class="coffee-card-img-content">
               <img
-                src="./images/capuccino.png"
+                src="src/images/capuccino.png"
                 alt="Um copo de vidro transparente com um cappuccino em camadas, mostrando o contraste entre o café, o leite vaporizado e a espuma cremosa no topo."
               />
             </div>
@@ -88,7 +89,7 @@
           </div>
           <div class="coffee-card">
             <div class="coffee-card-img-content">
-              <img src="./images/coffee-with-milk.png" alt="" />
+              <img src="src/images/coffee-with-milk.png" alt="" />
             </div>
             <div class="coffee-card-text">
               <span class="coffee-card-price">R$ 16,00</span>
@@ -103,7 +104,7 @@
           <div class="coffee-card">
             <div class="coffee-card-img-content">
               <img
-                src="./images/black-coffee.png"
+                src="src/images/black-coffee.png"
                 alt="Uma xícara preta de café com leite, decorada com arte de coração na espuma, servida em um pires combinando."
               />
             </div>
@@ -118,21 +119,24 @@
           </div>
         </div>
       </section>
-      <section id="crossaints">
-        <div class="crossaints-box container">
-          <div class="crossaints-texts">
-            <h2 class="croissants-title">Croissants</h2>
-            <span class="croissants-subtitle">Conheça nossa receita</span>
+      <section id="croissants">
+        <div class="croissants-box container">
+          <div class="croissants-texts">
+            <span class="croissants-price">R$ 12,00</span>
+            <h2 class="croissants-title" id="croissants-title">Croissants</h2>
+            <h3 class="croissants-subtitle">Conheça nossa receita</h3>
             <p class="croissants-description">
               A nossa receita de Croissant vai te surpreender. Croissants
               clássicos ou recheados!
             </p>
-            <button class="croissants-btn">Todos os croissants ></button>
+            <a class="croissants-link" href="#">Todos os croissants ></a>
           </div>
-          <div class="crossaints-img"></div>
+          <div class="croissants-img">
+            <img src="src/images/croissant.png" alt="" />
+          </div>
         </div>
       </section>
     </main>
-    <script src="./main.js"></script>
+    <script src="src/js/main.js"></script>
   </body>
 </html>
